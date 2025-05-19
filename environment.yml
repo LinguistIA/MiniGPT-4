@@ -4,17 +4,17 @@ channels:
   - defaults
   - anaconda
 dependencies:
-  - python=3.9
-  - cudatoolkit
-  - pip
+  - python=3.9.21
+  - cudatoolkit=11.8.0
+  - pip=25.1.1
   - pip:
-    - torch==2.0.0
-    - torchaudio
-    - torchvision
+    - torch==2.0.0+cu118
+    - torchaudio==2.0.1+cu118
+    - torchvision==0.15.1+cu118
     - huggingface-hub==0.18.0
     - matplotlib==3.7.0
     - psutil==5.9.4
-    - iopath
+    - iopath==0.1.10
     - pyyaml==6.0
     - regex==2022.10.31
     - tokenizers==0.13.2
@@ -26,10 +26,10 @@ dependencies:
     - opencv-python==4.7.0.72
     - decord==0.6.0
     - peft==0.2.0
-    - sentence-transformers
+    - sentence-transformers==2.2.2
     - gradio==3.47.1
     - accelerate==0.20.3
-    - bitsandbytes==0.37.0
-    - scikit-image
-    - visual-genome
-    - wandb
+    - bitsandbytes-windows==0.37.5
+    - scikit-image==0.24.0
+    - visual-genome==1.1.1
+    - wandb==0.19.10
